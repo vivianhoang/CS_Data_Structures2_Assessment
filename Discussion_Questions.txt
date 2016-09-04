@@ -1,0 +1,61 @@
+Discussion Questions
+
+
+RECURSION
+
+1. Recursion occurs when a function calls itself within the function. Recursion ends when the function hits a base case. Any recursion function can be rewritten as a while-loop and vice versa.
+
+2. It is necessary to have a base case because that's what stops the recursion function from calling itself again. Without it, the function will keep calling itself an infinite amount of times.
+
+------------------------------------------
+
+GRAPHS
+
+1. Graphs are similar to trees, except they can have loops. Their relationships can be directed but, unlike trees, they can be non-directed as well. A graph has nodes (vertex) and an edge (Arc) that connects the nodes. If the nodes are connected with an edge, they are considered adjacent.
+
+2. A graph is different from a tree graphs contain loops. Instead of having separate branches, branches splilt from a node and point to another node, hence creating a loop.
+
+3. Each node would be a friend and the edges would represent a direct relationship with one another. If there is a party going on and the invitation can be extended to only one other person, we can figure out how to optimize the invitations.
+
+------------------------------------------
+
+PERFORMANCE OF DIFFERENT DATA STRUCTURES
+
+
+Fill in the runtimes for the following actions for the table below:
+
+Data Structure     Index      Search     Add-R      Add-L      Pop-L      Pop-R
+Python List (Array) O(1)       O(n)       O(1)      O(n)        O(n)        O(1)
+Linked List         O(n)       O(n)       O(1)      O(1)        O(1)        O(n)
+Doubly-Linked List  O(n)       O(n)       O(1)      O(1)        O(1)        O(1)
+Queue (as Array)     X           X        O(1)        X         O(n)         X            
+Queue (as LL or DLL) X           X        O(1)        X         O(1)         X
+Stack (Array, LL, DLL)X          X        O(n)        X         X           O(1)
+Deque (as DLL)       X           X        O(1)       O(1)       O(1)        O(1)
+
+
+Fill in Runtime and Memory:
+
+
+Data Structure          Get     Add     Delete      Iterate     Memory
+Dictionary (Hash Map)   O(1)    O(1)    O(1)        O(n)        medium
+Set (Hash Map)          O(1)    O(1)    O(1)        O(n)        medium
+Binary Search Tree      O(logn) O(n)    O(n)        O(1)        a little
+Tree                    O(n)    O(1)    O(1)        O(1)        a little
+
+------------------------------------------
+
+SORTING
+
+1. The bubble sort algorithm bubbles the largest number to the top. After the first pass through the list, the biggest number will be all the way to the right. The second time, the next highest number will be passed all the way to the second to the end, and so on.
+
+2. Merge sort is a comparison-based sorting algorithm. We break down the lists that we are comparing and pop/append the smallest element value to a third list. To make the merge sort algorithm generalizable, one would have to have pre-sorted lists or make a recursive function that breaks down each list into single elements and sort from there before merging. To end the recursion of breaking down the lists into individual elements, there would have to be a base case.
+
+3. Quicksort involves using a pivot where we can move all other numbers lower than the pivot to the beginning of the list while the numbers higher than the pivot moves towards the end of the list. It is similar to divide-and-conquer.
+
+------------------------------------------
+
+GIT BRANCHING
+
+1. I would use git branching if I wanted to test a new feature I want to implement without ruining what I currently have.
+2. A pull request happens when someone with their own branch of work wants to contribute code to someone else's branch. Someone checks the code before deciding whether or not to merge the branches.
